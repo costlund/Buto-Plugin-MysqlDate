@@ -1,0 +1,18 @@
+tables:
+  mysql_date:
+    field:
+      date:
+        type: date
+        not_null: true
+        primary_key: true
+extra:
+  field:
+    created_at:
+      type: timestamp
+      default: CURRENT_TIMESTAMP
+    updated_at:
+      type: timestamp
+    created_by:
+      type: varchar(50)
+    updated_by:
+      type: varchar(50)
